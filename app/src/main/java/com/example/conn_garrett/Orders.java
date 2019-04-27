@@ -14,10 +14,9 @@ public class Orders extends AppCompatActivity {
     private TextView textView;
     private TextView priceTextView;
     private Button applyTextButton;
-    public static final String ORDER_ITEM = "order"; //name for shared preferences
-    public static final String ORDER = "Order";
-
-
+    public SharedPreferences mOrder;
+    public SharedPreferences.Editor mEditor;
+    public String ORDER_ITEM = getString(R.string.order); //name for shared preferences
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +47,7 @@ public class Orders extends AppCompatActivity {
 private String getOrder() {
     SharedPreferences order  = getSharedPreferences(ORDER_ITEM,MODE_PRIVATE);
 
-            String extractedTxt  = order.getString(ORDER,"Add to order");
+            String extractedTxt  = order.getString(ORDER_ITEM,"Add to order");
             return null;
 }
 
@@ -57,7 +56,8 @@ private void storeOrder() {
     SharedPreferences order  = getSharedPreferences(ORDER_ITEM,MODE_PRIVATE);
     SharedPreferences.Editor editor = order.edit();
 
-    editor.putString(ORDER, textView.getText().toString() );
+    editor.putString(ORDER_ITEM, textView.getText().toString() );
+    editor.apply();
     editor.commit();
 
 }

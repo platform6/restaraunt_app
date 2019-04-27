@@ -49,4 +49,5 @@
     <string name="add">ADD</string>
     <string name="my_order_contents">my_order_contents</string>
     <string name="price_text_view">price_text_view</string>
+    <string name="order">com.example.conn_garrett.order</string>
 </resources>
