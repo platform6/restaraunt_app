@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pizza">
+
+    <RelativeLayout
+        android:id="@+id/pizza_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/pizza_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+
+            <ImageView
+                android:id="@+id/pizza_1"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/meatlovers"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/pizza2" />
+
+            <ImageView
+                android:id="@+id/pizza_2"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/veggie"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@drawable/pizza2" />
+
+            <ImageView
+                android:id="@+id/pizza_3"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/BBQ"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="2"
+                app:srcCompat="@drawable/pizza3" />
+
+            <ImageView
+                android:id="@+id/pizza_4"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Cheese_price"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="3"
+                app:srcCompat="@drawable/pizza4" />
+
+            <ImageView
+                android:id="@+id/pizza_5"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Pepperoni_Price"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="4"
+                app:srcCompat="@drawable/pizza7" />
+
+            <TextView
+                android:id="@+id/pizza_text_1"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/meatlovers"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/meatlovers"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/pizza_text_2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/veggie"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/veggie"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/pizza_text_3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/BBQ"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/pizza_text_4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Cheese"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Cheese"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/pizza_text_5"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Pepperoni"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Pepperoni"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+
+            <Button
+                android:id="@+id/button_pizza_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meatlovers_Price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/button_pizza_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/veggie_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/button_pizza_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BBQ_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/button_pizza_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cheese_price"
+                app:layout_column="2"
+                app:layout_gravity="center_vertical|center_horizontal|center"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/button_pizza_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pepperoni_Price"
+                app:layout_column="2"
+                app:layout_gravity="center_vertical|center_horizontal|center"
+                app:layout_row="4" />
+
+        </android.support.v7.widget.GridLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

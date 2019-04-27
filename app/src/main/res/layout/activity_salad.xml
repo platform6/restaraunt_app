@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Salad">
+
+    <RelativeLayout
+        android:id="@+id/salad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/salad_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/chopped_salad_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/ChoppedSalad"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/salad1" />
+
+            <ImageView
+                android:id="@+id/avacado_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/avacado"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@mipmap/salad2" />
+
+            <ImageView
+                android:id="@+id/chicken_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Chickensalad"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="2"
+                app:srcCompat="@mipmap/salad3" />
+
+            <ImageView
+                android:id="@+id/egg_salad_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/eggsalad"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="3"
+                app:srcCompat="@mipmap/salad4" />
+
+            <ImageView
+                android:id="@+id/spinach_salad"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/spinach"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="4"
+                app:srcCompat="@mipmap/salad5" />
+
+            <TextView
+                android:id="@+id/chopped_salad_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/ChoppedSalad"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/avacado_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/avacado"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/chicken_salad_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Chickensalad"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/egg_salad_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/eggsalad"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/spinach_salad_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/spinach"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+
+            <Button
+                android:id="@+id/chopped_salad_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chopped_salad_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/avacad_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avacado_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/chicken_salad_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Chickensalad_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/egg_salad_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eggsalad_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/spinach_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spinach_salad_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+        </android.support.v7.widget.GridLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

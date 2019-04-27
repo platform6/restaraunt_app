@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appetizers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/appetizer_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/breadstick_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Breadsticks"
+                app:srcCompat="@drawable/breadsticks" />
+
+            <ImageView
+                android:id="@+id/fries_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Fries"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@drawable/fries" />
+
+            <ImageView
+                android:id="@+id/hotwing_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Hotwings"
+                app:layout_column="0"
+                app:layout_row="2"
+                app:srcCompat="@drawable/hotwings" />
+
+            <ImageView
+                android:id="@+id/mozerella_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Mozarella"
+                app:layout_column="0"
+                app:layout_row="3"
+                app:srcCompat="@drawable/mozarella" />
+
+            <ImageView
+                android:id="@+id/onionrings_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/OnionRings"
+                app:layout_column="0"
+                app:layout_row="4"
+                app:srcCompat="@drawable/onionrings" />
+
+            <TextView
+                android:id="@+id/breadsticks_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Breadsticks"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/fries_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Fries"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/Hotwing_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Hotwings"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/mozarella_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Mozarella"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/onionrings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/OnionRings"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+
+            <Button
+                android:id="@+id/breadstick_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Breadstick_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/fries_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Fries_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/hotwing_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Hotwings_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/moz_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Mozarella_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Onionrings_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+
+        </android.support.v7.widget.GridLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

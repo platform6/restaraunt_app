@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subs">
+
+    <RelativeLayout
+        android:id="@+id/sub_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/sub_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/meatball_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Meatball"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/sub1" />
+
+            <ImageView
+                android:id="@+id/turkey_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Turkey"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@mipmap/sub2" />
+
+            <ImageView
+                android:id="@+id/chicken_parm_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Chickenparm"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="2"
+                app:srcCompat="@mipmap/sub3" />
+
+            <ImageView
+                android:id="@+id/italian_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Italian"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="3"
+                app:srcCompat="@mipmap/sub4" />
+
+            <ImageView
+                android:id="@+id/cuban_image"
+                android:layout_width="129dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/Cuban"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:layout_column="0"
+                app:layout_row="4"
+                app:srcCompat="@mipmap/sub5" />
+
+            <TextView
+                android:id="@+id/meatball_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Meatball"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/turkey_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Turkey"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/chickenparm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Chickenparm"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/italian_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Italian"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/cuban_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/Cuban"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+
+            <Button
+                android:id="@+id/meatball_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Meatball_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/turkey_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Turkey_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/chickenparm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Chickenparm_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="2" />
+
+            <Button
+                android:id="@+id/italian_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Italian_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="3" />
+
+            <Button
+                android:id="@+id/cuban_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cuban_price"
+                app:layout_column="2"
+                app:layout_gravity="center"
+                app:layout_row="4" />
+        </android.support.v7.widget.GridLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
