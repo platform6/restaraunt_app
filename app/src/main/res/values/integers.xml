@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="meat_lovers_price">11</integer>
-</resources>
+    <integer name="veggie_price">8</integer>
+    <integer name="bbq_price">13</integer>
+    <integer name="cheese_price">9</integer>
+    <integer name="pepperonni_price">10</integer>
+    <integer name="breadstick_price">5</integer>
+    <integer name="frie_price">4</integer>
+    <integer name="hot_wing_price">8</integer>
+    <integer name="moz_price">3</integer>
+    <integer name="onion_ring_price">6</integer>
+    <integer name="chopped_salad_price">5</integer>
+    <integer name="avocado_price">4</integer>
+    <integer name="chicken_salad_price">3</integer>
+    <integer name="egg_salad_price">8</integer>
+    <integer name="meatball_price">5</integer>
+    <integer name="turkey_price">4</integer>
+    <integer name="chicken_parm_price">3</integer>
+    <integer name="italian_price">8</integer>
+    <integer name="cuban_price">6</integer>
+    </resources>
