@@ -14,6 +14,7 @@
     <integer name="avocado_price">4</integer>
     <integer name="chicken_salad_price">3</integer>
     <integer name="egg_salad_price">8</integer>
+    <integer name="spinach_salad_price">6</integer>
     <integer name="meatball_price">5</integer>
     <integer name="turkey_price">4</integer>
     <integer name="chicken_parm_price">3</integer>
