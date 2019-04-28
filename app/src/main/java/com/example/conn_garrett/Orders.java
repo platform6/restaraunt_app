@@ -1,6 +1,7 @@
 package com.example.conn_garrett;
 
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,34 +14,28 @@ public class Orders extends AppCompatActivity {
 
     private TextView textView;
     private TextView priceTextView;
-    private Button applyTextButton;
-    public SharedPreferences mOrder;
-    public SharedPreferences.Editor mEditor;
-    public String ORDER_ITEM = getString(R.string.order); //name for shared preferences
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orders);
 
-        applyTextButton = (Button) findViewById(R.id.order_test);
+
         textView = (TextView) findViewById(R.id.my_order_contents);
         priceTextView = (TextView) findViewById(R.id.price_text);
 
-                applyTextButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                    textView.setText("adding");
-                    priceTextView.setText("price");
-                    }
-                });
+        SharedPreferences mOrder = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor mEditor = mOrder.edit();
 
-    getOrder();
-    storeOrder();
+        String Order = mOrder.getString(getString(R.string.order),"" );
+        int Price = mOrder.getInt(getString(R.string.price),0 );
+        textView.setText(Order);
+        priceTextView.setText(Price);
     }
 
 
-
+/*
     // Attempting to use SharedPreferences to add  the ability to receive items from the other activities
     // and list this as part of a ListView with the grand total of price and calculated sales tax.
 
@@ -61,5 +56,6 @@ private void storeOrder() {
     editor.commit();
 
 }
+*/
 
 }

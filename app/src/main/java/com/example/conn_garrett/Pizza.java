@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Pizza extends AppCompatActivity {
 
@@ -29,8 +30,11 @@ creating a listener for the pizza buttons to add to the order activity
         pizzabutton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int price  = R.integer.meat_lovers_price;
             mEditor.putString(getString(R.string.order), getString(R.string.meatlovers));
+            mEditor.putInt(getString(R.string.price),price);
             mEditor.commit();
+            Toast.makeText(Pizza.this, "Added to Order!", Toast.LENGTH_SHORT).show();
             }
         });
 
